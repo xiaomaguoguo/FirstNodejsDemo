@@ -11,131 +11,136 @@
 </head>
 <body>
 
-<fieldset class="layui-elem-field site-demo-button" style="margin-top: 30px;">
-  <legend>六种按钮主题</legend>
-  <div>
-    <button class="layui-btn layui-btn-primary">原始按钮</button>
-    <button class="layui-btn">默认按钮</button>
-    <a href="http://www.knothing.cn" class="layui-btn">一个可跳转的按钮</a>
-    <button class="layui-btn layui-btn-normal">百搭按钮</button>
-    <button class="layui-btn layui-btn-warm">暖色按钮</button>
-    <button class="layui-btn layui-btn-danger">警告按钮</button>
-    <button class="layui-btn layui-btn-disabled">禁用按钮</button>
-  </div>
-</fieldset>
-<fieldset class="layui-elem-field site-demo-button">
-  <legend>四种按钮尺寸</legend>
-  <div>
-    <button class="layui-btn layui-btn-primary layui-btn-lg">大型按钮</button>
-    <button class="layui-btn layui-btn-primary">默认按钮</button>
-    <button class="layui-btn layui-btn-primary layui-btn-sm">小型按钮</button>
-    <button class="layui-btn layui-btn-primary layui-btn-xs">迷你按钮</button>
 
-    <br>
-
-    <button class="layui-btn layui-btn-lg">大型按钮</button>
-    <button class="layui-btn">默认按钮</button>
-    <button class="layui-btn layui-btn-sm">小型按钮</button>
-    <button class="layui-btn layui-btn-xs">迷你按钮</button>
-
-    <br>
-
-    <button class="layui-btn layui-btn-lg layui-btn-normal">大型按钮</button>
-    <button class="layui-btn layui-btn-normal">默认按钮</button>
-    <button class="layui-btn layui-btn-sm layui-btn-normal">小型按钮</button>
-    <button class="layui-btn layui-btn-xs layui-btn-normal">迷你按钮</button>
-
-    <div class="layui-text" style="margin: 0; color: #FF5722;">
-      注意：从 layui 2.2.0 开始，为了统一规范，定义按钮尺寸的 CSS 类已作出调整，详见：<a href="/doc/element/button.html#size" target="_blank">按钮尺寸文档</a>
+<form class="layui-form layui-form-pane" action="">
+  <div class="layui-form-item">
+    <label class="layui-form-label">长输入框</label>
+    <div class="layui-input-block">
+      <input type="text" name="title" autocomplete="off" placeholder="请输入标题" class="layui-input">
     </div>
   </div>
-</fieldset>
-<fieldset class="layui-elem-field site-demo-button">
-  <legend>灵活的图标按钮（更多图标请阅览：文档-图标）</legend>
-  <div>
-    <button class="layui-btn"><i class="layui-icon"></i></button>
-    <button class="layui-btn"><i class="layui-icon"></i></button>
-    <button class="layui-btn"><i class="layui-icon"></i></button>
-    <button class="layui-btn"><i class="layui-icon"></i></button>
-    <button class="layui-btn"><i class="layui-icon"></i></button>
-    <button class="layui-btn"><i class="layui-icon"></i></button>
-
-    <br>
-
-    <button class="layui-btn layui-btn-danger"><i class="layui-icon"></i></button>
-    <button class="layui-btn layui-btn-danger"><i class="layui-icon"></i></button>
-    <button class="layui-btn layui-btn-danger"><i class="layui-icon"></i></button>
-    <button class="layui-btn layui-btn-danger"><i class="layui-icon"></i></button>
-    <button class="layui-btn layui-btn-danger"><i class="layui-icon"></i></button>
-    <button class="layui-btn layui-btn-danger"><i class="layui-icon"></i></button>
-
-    <br>
-
-    <button class="layui-btn layui-btn-primary layui-btn-sm"><i class="layui-icon"></i></button>
-    <button class="layui-btn layui-btn-primary layui-btn-sm"><i class="layui-icon"></i></button>
-    <button class="layui-btn layui-btn-primary layui-btn-sm"><i class="layui-icon"></i></button>
-    <button class="layui-btn layui-btn-primary layui-btn-sm"><i class="layui-icon"></i></button>
-    <button class="layui-btn layui-btn-primary layui-btn-sm"><i class="layui-icon"></i></button>
-    <button class="layui-btn layui-btn-primary layui-btn-sm"><i class="layui-icon"></i></button>
-
-    <button class="layui-btn layui-btn-sm"><i class="layui-icon"></i></button>
-    <button class="layui-btn layui-btn-sm"><i class="layui-icon"></i></button>
-    <button class="layui-btn layui-btn-sm"><i class="layui-icon"></i></button>
-    <button class="layui-btn layui-btn-sm"><i class="layui-icon"></i></button>
-    <button class="layui-btn layui-btn-sm"><i class="layui-icon"></i></button>
-    <button class="layui-btn layui-btn-sm"><i class="layui-icon"></i></button>
-
-    <button class="layui-btn layui-btn-normal layui-btn-sm"><i class="layui-icon"></i></button>
-    <button class="layui-btn layui-btn-normal layui-btn-sm"><i class="layui-icon"></i></button>
-    <button class="layui-btn layui-btn-normal layui-btn-sm"><i class="layui-icon"></i></button>
-    <button class="layui-btn layui-btn-normal layui-btn-sm"><i class="layui-icon"></i></button>
-    <button class="layui-btn layui-btn-normal layui-btn-sm"><i class="layui-icon"></i></button>
-    <button class="layui-btn layui-btn-normal layui-btn-sm"><i class="layui-icon"></i></button>
+  <div class="layui-form-item">
+    <label class="layui-form-label">短输入框</label>
+    <div class="layui-input-inline">
+      <input type="text" name="username" lay-verify="required" placeholder="请输入" autocomplete="off" class="layui-input">
+    </div>
   </div>
-</fieldset>
-<fieldset class="layui-elem-field site-demo-button">
-  <legend>还可以是圆角按钮</legend>
-  <div>
-    <button class="layui-btn layui-btn-primary layui-btn-radius">原始按钮</button>
-    <button class="layui-btn layui-btn-radius">默认按钮</button>
-    <button class="layui-btn layui-btn-normal layui-btn-radius">百搭按钮</button>
-    <button class="layui-btn layui-btn-warm layui-btn-radius">暖色按钮</button>
-    <button class="layui-btn layui-btn-danger layui-btn-radius">警告按钮</button>
-    <button class="layui-btn layui-btn-disabled layui-btn-radius">禁用按钮</button>
-  </div>
-</fieldset>
-<fieldset class="layui-elem-field site-demo-button">
-  <legend>风格混搭的按钮</legend>
-  <div>
-    <button class="layui-btn layui-btn-lg layui-btn-primary layui-btn-radius">大型加圆角</button>
-    <a href="http://www.layui.com/doc/element/button.html" class="layui-btn" target="_blank">跳转的按钮</a>
-    <button class="layui-btn layui-btn-sm layui-btn-normal"><i class="layui-icon"></i> 删除</button>
-    <button class="layui-btn layui-btn-xs layui-btn-disabled"><i class="layui-icon"></i> 分享</button>
-  </div>
-</fieldset>
 
-<fieldset class="layui-elem-field site-demo-button">
-  <legend>按钮组</legend>
-  <div class="layui-btn-group">
-    <button class="layui-btn">增加</button>
-    <button class="layui-btn ">编辑</button>
-    <button class="layui-btn">删除</button>
+  <div class="layui-form-item">
+    <div class="layui-inline">
+      <label class="layui-form-label">日期选择</label>
+      <div class="layui-input-block">
+        <input type="text" name="date" id="date1" autocomplete="off" class="layui-input">
+      </div>
+    </div>
+    <div class="layui-inline">
+      <label class="layui-form-label">行内表单</label>
+      <div class="layui-input-inline">
+        <input type="text" name="number" autocomplete="off" class="layui-input">
+      </div>
+    </div>
   </div>
-  <div class="layui-btn-group">
-    <button class="layui-btn layui-btn-sm"><i class="layui-icon"></i></button>
-    <button class="layui-btn layui-btn-sm"><i class="layui-icon"></i></button>
-    <button class="layui-btn layui-btn-sm"><i class="layui-icon"></i></button>
-    <button class="layui-btn layui-btn-sm"><i class="layui-icon"></i></button>
+  <div class="layui-form-item">
+    <label class="layui-form-label">密码</label>
+    <div class="layui-input-inline">
+      <input type="password" name="password" placeholder="请输入密码" autocomplete="off" class="layui-input">
+    </div>
+    <div class="layui-form-mid layui-word-aux">请务必填写用户名</div>
   </div>
-  <div class="layui-btn-group">
-    <button class="layui-btn layui-btn-primary layui-btn-sm">文字</button>
-    <button class="layui-btn layui-btn-primary layui-btn-sm"><i class="layui-icon"></i></button>
-    <button class="layui-btn layui-btn-primary layui-btn-sm"><i class="layui-icon"></i></button>
-    <button class="layui-btn layui-btn-primary layui-btn-sm"><i class="layui-icon"></i></button>
-  </div>
-</fieldset>
 
-<script src="//res.layui.com/layui/dist/layui.js" charset="utf-8"></script>
-<!-- 注意：如果你直接复制所有代码到本地，上述js路径需要改成你本地的 -->
+  <div class="layui-form-item">
+    <div class="layui-inline">
+      <label class="layui-form-label">范围</label>
+      <div class="layui-input-inline" style="width: 100px;">
+        <input type="text" name="price_min" placeholder="￥" autocomplete="off" class="layui-input">
+      </div>
+      <div class="layui-form-mid">-</div>
+      <div class="layui-input-inline" style="width: 100px;">
+        <input type="text" name="price_max" placeholder="￥" autocomplete="off" class="layui-input">
+      </div>
+    </div>
+  </div>
+
+  <div class="layui-form-item">
+    <label class="layui-form-label">单行选择框</label>
+    <div class="layui-input-block">
+      <select name="interest" lay-filter="aihao">
+        <option value=""></option>
+        <option value="0">写作</option>
+        <option value="1" selected="">阅读</option>
+        <option value="2">游戏</option>
+        <option value="3">音乐</option>
+        <option value="4">旅行</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="layui-form-item">
+    <label class="layui-form-label">行内选择框</label>
+    <div class="layui-input-inline">
+      <select name="quiz1">
+        <option value="">请选择省</option>
+        <option value="浙江" selected="">浙江省</option>
+        <option value="你的工号">江西省</option>
+        <option value="你最喜欢的老师">福建省</option>
+      </select>
+    </div>
+    <div class="layui-input-inline">
+      <select name="quiz2">
+        <option value="">请选择市</option>
+        <option value="杭州">杭州</option>
+        <option value="宁波" disabled="">宁波</option>
+        <option value="温州">温州</option>
+        <option value="温州">台州</option>
+        <option value="温州">绍兴</option>
+      </select>
+    </div>
+    <div class="layui-input-inline">
+      <select name="quiz3">
+        <option value="">请选择县/区</option>
+        <option value="西湖区">西湖区</option>
+        <option value="余杭区">余杭区</option>
+        <option value="拱墅区">临安市</option>
+      </select>
+    </div>
+  </div>
+  <div class="layui-form-item" pane="">
+    <label class="layui-form-label">开关-开</label>
+    <div class="layui-input-block">
+      <input type="checkbox" checked="" name="open" lay-skin="switch" lay-filter="switchTest" title="开关">
+    </div>
+  </div>
+  <div class="layui-form-item" pane="">
+    <label class="layui-form-label">单选框</label>
+    <div class="layui-input-block">
+      <input type="radio" name="sex" value="男" title="男" checked="">
+      <input type="radio" name="sex" value="女" title="女">
+      <input type="radio" name="sex" value="禁" title="禁用" disabled="">
+    </div>
+  </div>
+  <div class="layui-form-item layui-form-text">
+    <label class="layui-form-label">文本域</label>
+    <div class="layui-input-block">
+      <textarea placeholder="请输入内容" class="layui-textarea"></textarea>
+    </div>
+  </div>
+  <div class="layui-form-item">
+    <button class="layui-btn" lay-submit="" lay-filter="demo2">跳转式提交</button>
+  </div>
+</form>
+
+<script>
+    //Demo
+    layui.use('form', function(){
+        var form = layui.form;
+
+        //监听提交
+        form.on('submit(formDemo)', function(data){
+            layer.msg(JSON.stringify(data.field));
+            return false;
+        });
+    });
+</script>
+
 </body>
 </html>
